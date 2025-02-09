@@ -9,8 +9,8 @@ export default function Home() {
     <title>Salisbury Road Residents Association</title>
     <meta name="description" content="The official website for Salisbury Road Residents Association in Moseley." />
     <meta property="og:title" content="Salisbury Road Residents Association" />
-    <meta property="og:description" content="Find information about the Salisbury Road Residents Association, our survey, and consultation form." />
-    <meta property="og:image" content="/leaflet.png" />
+    <meta property="og:description" content="Find information about the Salisbury Road Residents Association, Sign up as a member, and submit your objection to the West Moseley road closures." />
+    <meta property="og:image" content="/ClosuresFlyer.png" />
     <meta property="og:url" content="https://www.salisburyroadmoseley.co.uk/" />
     <meta name="twitter:card" content="summary_large_image" />
   </Head>
