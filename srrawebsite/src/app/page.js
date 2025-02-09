@@ -3,6 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col items-center p-6">
+      <title>Salisbury Rd Residents Association</title>
       {/* Header */}
       <header className="w-full text-center py-6">
         <h1 className="text-3xl font-bold">SALISBURY ROAD RESIDENTS ASSOCIATION</h1>
