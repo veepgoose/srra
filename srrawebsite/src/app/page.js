@@ -1,9 +1,21 @@
 import Image from 'next/image';
+import Head from 'next/head';
+
 
 export default function Home() {
   return (
+    <>
+    <Head>
+    <title>Salisbury Road Residents Association</title>
+    <meta name="description" content="The official website for Salisbury Road Residents Association in Moseley." />
+    <meta property="og:title" content="Salisbury Road Residents Association" />
+    <meta property="og:description" content="Find information about the Salisbury Road Residents Association, our survey, and consultation form." />
+    <meta property="og:image" content="/leaflet.png" />
+    <meta property="og:url" content="https://www.salisburyroadmoseley.co.uk/" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </Head>
     <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col items-center p-6">
-      <title>Salisbury Rd Residents Association</title>
+    <title>Salisbury Road Residents Association</title>  
       {/* Header */}
       <header className="w-full text-center py-6">
         <h1 className="text-3xl font-bold">SALISBURY ROAD RESIDENTS ASSOCIATION</h1>
@@ -41,5 +53,6 @@ export default function Home() {
         </a>
       </div>
     </div>
+    </>
   );
 }
