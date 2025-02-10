@@ -33,7 +33,7 @@ export default function Home() {
           </a>
           
           <a
-            href="https://www.surveymonkey.com/r/BPS96BC"
+            href="https://forms.gle/v4RNGLDDaucGiT9t9"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 text-center bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition"
