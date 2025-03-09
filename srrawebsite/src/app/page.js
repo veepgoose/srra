@@ -13,8 +13,8 @@ export default function Home() {
         {/* Leaflet Image */}
         <div className="w-full max-w-2xl my-6">
           <Image 
-            src="/ClosuresFlyer.png" 
-            alt="Salisbury Road Residents Association Leaflet" 
+            src="/ResidentsAssociationAgenda.png" 
+            alt="Salisbury Road Residents Association Agenda" 
             width={800} 
             height={600} 
             className="w-full h-auto rounded-lg shadow-md"
@@ -22,15 +22,7 @@ export default function Home() {
         </div>
 
         {/* Links */}
-        <div className="flex flex-col gap-4">
-          <a
-            href="https://www.birminghambeheard.org.uk/bcc/westmoseleytrs/consultation/subpage.2018-02-26.3413088493/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 text-center bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
-          >
-            SUBMIT YOUR OBJECTION
-          </a>
+      
           
           <a
             href="https://forms.gle/v4RNGLDDaucGiT9t9"
@@ -41,6 +33,6 @@ export default function Home() {
             Join Salisbury Road Residents Association
           </a>
         </div>
-      </div>
+      
   );
 }
