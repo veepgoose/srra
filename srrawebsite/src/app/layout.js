@@ -1,52 +1,33 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Salisbury Road Residents Association",
-  description:
-    "Find information about the Salisbury Road Residents Association, sign up as a member, and submit your objection to the West Moseley road closures.",
-  openGraph: {
-    title: "Salisbury Road Residents Association",
-    description:
-      "Find information about the Salisbury Road Residents Association, sign up as a member, and submit your objection to the West Moseley road closures.",
-    url: "https://www.salisburyroadmoseley.co.uk/",
-    siteName: "Salisbury Road Residents Association",
-    images: [
-      {
-        url: "https://www.salisburyroadmoseley.co.uk/ClosuresFlyer.png",
-        width: 1200,
-        height: 630,
-        alt: "Salisbury Road Residents Association Leaflet",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Salisbury Road Residents Association",
-    description:
-      "Find information about the Salisbury Road Residents Association, sign up as a member, and submit your objection to the West Moseley road closures.",
-    images: ["https://www.salisburyroadmoseley.co.uk/ClosuresFlyer.png"],
-  },
+  description: "Resources and updates for residents of Salisbury Road, Moseley.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-gray-50 text-gray-900 font-sans">
+        <header className="bg-white shadow sticky top-0 z-10">
+          <nav className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 className="text-xl font-bold">Salisbury Road RA</h1>
+            <ul className="flex space-x-4 text-sm font-medium">
+              <li><a href="/" className="hover:underline">Home</a></li>
+              <li><a href="/about" className="hover:underline">About</a></li>
+              <li><a href="/constitution" className="hover:underline">Constitution</a></li>
+              <li><a href="/code-of-conduct" className="hover:underline">Code of Conduct</a></li>
+              <li><a href="/agenda" className="hover:underline">Agenda</a></li>
+              <li><a href="/minutes" className="hover:underline">Minutes</a></li>
+              <li><a href="/announcements" className="hover:underline">Announcements</a></li>
+              <li><a href="/history" className="hover:underline">History</a></li>
+              <li><a href="/join" className="hover:bg-green-100 text-green-700 border border-green-700 px-2 py-1 rounded">Join</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main className="max-w-5xl mx-auto px-4 py-8">
+          {children}
+        </main>
       </body>
     </html>
   );
