@@ -9,10 +9,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-ivory text-leaf font-sans">
-        <header className="bg-white shadow sticky top-0 z-10">
+        <header className="bg-sage shadow sticky top-0 z-10">
           <nav className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-bold">Salisbury Road RA</h1>
-            <ul className="flex flex-wrap gap-4 text-sm font-medium">
+            <h1 className="text-xl font-bold text-ivory">Salisbury Road RA</h1>
+            <ul className="flex flex-wrap gap-4 text-sm text-ivory font-medium">
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a href="/about" className="hover:underline">About</a></li>
               <li><a href="/constitution" className="hover:underline">Constitution</a></li>
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
               <li><a href="/minutes" className="hover:underline">Minutes</a></li>
               <li><a href="/announcements" className="hover:underline">Announcements</a></li>
               <li><a href="/history" className="hover:underline">History</a></li>
-              <li><a href="/join" className="hover:bg-mint text-leaf border border-leaf px-2 py-1 rounded">Join</a></li>
+              <li><a href="/join" className="hover:bg-mint text-ivory border border-mint px-2 py-1 rounded">Join</a></li>
             </ul>
           </nav>
         </header>
